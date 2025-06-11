@@ -1,0 +1,147 @@
+/* styles/MoodBasedRecipes.module.css */
+.container {
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.moodsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.moodSection {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.moodSection:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.moodHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.moodEmoji {
+  font-size: 2.5rem;
+}
+
+.moodName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.moodDescription {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin: 0;
+  font-style: italic;
+}
+
+.recipesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.showMoreBtn,
+.showLessBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.showMoreBtn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ffd93d 100%);
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.showMoreBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.showLessBtn {
+  background: rgba(255, 255, 255, 0.9);
+  color: #6c757d;
+  border: 2px solid #e9ecef;
+  backdrop-filter: blur(10px);
+}
+
+.showLessBtn:hover {
+  background: rgba(233, 236, 239, 0.9);
+  color: #495057;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.showMoreBtn:hover .arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .moodSection {
+    padding: 1.5rem;
+  }
+  
+  .moodHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .recipesGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .navigationButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .showMoreBtn,
+  .showLessBtn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
