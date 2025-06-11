@@ -10,12 +10,12 @@ interface Recipe {
   type: 'dinner' | 'snack' | 'sweet';
   isInstant: boolean;
   isSpicy: boolean;
-  ingredients: string[];
+  ingredients: readonly string[]; // Use readonly here
   stateId: string;
 }
 
 interface RecipeGridProps {
-  recipes: Recipe[];
+  recipes: readonly Recipe[]; // Update to readonly
 }
 
 const RecipeGrid: React.FC<RecipeGridProps> = ({ recipes }) => {

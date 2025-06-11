@@ -10,18 +10,18 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { stateRecipes as allStateRecipes } from '@/app/data/recipes/telanganaRecipes';
 
-interface Recipe {
+export type Recipe = {
   id: string;
   name: string;
   image: string;
-  difficulty: 'easy' | 'moderate' | 'hard';
+  difficulty: "easy" | "moderate" | "hard";
   isVeg: boolean;
-  type: 'dinner' | 'snack' | 'sweet';
+  type: "dinner" | "snack" | "sweet";
   isInstant: boolean;
   isSpicy: boolean;
-  ingredients: string[];
+  ingredients: readonly string[]; // Use readonly here
   stateId: string;
-}
+};
 export default function StatePage({ params }: { params: Promise<{ stateId: string }> }) {
   const { stateId } = use(params);
   const state = indianStates.find(s => s.id === stateId.toLowerCase());
@@ -52,16 +52,23 @@ export default function StatePage({ params }: { params: Promise<{ stateId: strin
 
       // Handle tag filters
       return activeFilters.length === 0 || activeFilters.every(filter => {
-        switch (filter) {
-          case 'veg': return recipe.isVeg;
-          case 'dinner': return recipe.type === 'dinner';
-          case 'snack': return recipe.type === 'snack'; 
-          case 'sweet': return recipe.type === 'sweet';
-          case 'instant': return recipe.isInstant;
-          case 'spicy': return recipe.isSpicy;
-          default: return true;
-        }
-      });
+  switch (filter) {
+    case "veg":
+      return recipe.isVeg;
+    case "dinner":
+      return recipe.type === "dinner";
+    case "snack":
+      return recipe.type === "snack";
+    case "sweet":
+      return recipe.type === "sweet";
+    case "instant":
+      return recipe.isInstant;
+    case "spicy":
+      return recipe.isSpicy;
+    default:
+      return true;
+  }
+});
     });
   }, [stateRecipes, searchIngredients, activeFilters]);
 
@@ -97,11 +104,11 @@ export default function StatePage({ params }: { params: Promise<{ stateId: strin
   };
 
   // Combine all recipes for display
-  const allRecipes = [
-    ...recipesByDifficulty.easy,
-    ...recipesByDifficulty.moderate,
-    ...recipesByDifficulty.hard,
-  ];
+ const allRecipes = [
+  ...recipesByDifficulty.easy,
+  ...recipesByDifficulty.moderate,
+  ...recipesByDifficulty.hard,
+] as Recipe[]; // Cast to mutable Recipe[]
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
