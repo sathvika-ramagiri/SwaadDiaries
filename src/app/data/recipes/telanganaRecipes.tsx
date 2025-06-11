@@ -97,4 +97,16 @@ export const stateRecipes = [
   }
 ] as const;
 
-export type Recipe = typeof stateRecipes[number];
+// Update the Recipe type to match the readonly structure
+export type Recipe = {
+  id: string;
+  name: string;
+  image: string;
+  difficulty: "easy" | "moderate" | "hard";
+  isVeg: boolean;
+  type: "dinner" | "snack" | "sweet";
+  isInstant: boolean;
+  isSpicy: boolean;
+  ingredients: readonly string[]; // Use readonly here
+  stateId: string;
+};
