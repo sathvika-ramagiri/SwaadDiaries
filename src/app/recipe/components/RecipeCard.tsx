@@ -2,11 +2,11 @@
 import Image from 'next/image';
 import styles from '@/styles/RecipeCard.module.css';
 
-const RecipeCard = ({ recipe }) => {
+const RecipeCard = ({ recipe }: { recipe: any }) => {
   if (!recipe || !recipe.image) {
   return null; // or a fallback UI
 }
-  const getDifficultyColor = (difficulty) => {
+  const getDifficultyColor = ({difficulty}: {difficulty: any}) => {
     switch (difficulty.toLowerCase()) {
       case 'easy': return '#4CAF50';
       case 'medium': return '#FF9800';
