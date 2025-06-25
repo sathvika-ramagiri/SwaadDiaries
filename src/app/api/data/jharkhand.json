@@ -1,0 +1,26 @@
+[
+  {
+    "id": "thekua033",
+    "name": "Thekua",
+    "image": "/images/thekua.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "snack",
+    "isInstant": true,
+    "isSpicy": false,
+    "ingredients": ["wheat flour", "jaggery", "ghee"],
+    "stateId": "jharkhand"
+  },
+  {
+    "id": "dhooska034",
+    "name": "Dhooska",
+    "image": "/images/dhooska.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "snack",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["rice flour", "chana dal", "spices"],
+    "stateId": "jharkhand"
+  }
+]

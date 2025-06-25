@@ -1,0 +1,14 @@
+[
+  {
+    "id": "jadoh052",
+    "name": "Jadoh",
+    "image": "/images/jadoh.jpg",
+    "difficulty": "moderate",
+    "isVeg": false,
+    "type": "dinner",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["rice", "pork", "spices"],
+    "stateId": "meghalaya"
+  }
+]

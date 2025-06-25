@@ -1,0 +1,14 @@
+[
+  {
+    "id": "siddu048",
+    "name": "Siddu",
+    "image": "/images/siddu.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "snack",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": ["wheat flour", "walnut paste"],
+    "stateId": "himachal-pradesh"
+  }
+]

@@ -13,7 +13,7 @@ export default function Home() {
       <HeroSection />
       <MoodFilters />
       <FeaturedRecipes />
-     <StatesSection  /> 
+      <StatesSection  /> 
       <Footer id="footer" /> {/* Add id here */}
     </main>
   )

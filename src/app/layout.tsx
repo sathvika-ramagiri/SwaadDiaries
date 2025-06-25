@@ -13,11 +13,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: 'SwaadDiaries',
-  
   description: 'A nostalgic and culturally rich food website focused on traditional Indian recipes, narrated and presented in grandma-style storytelling.',
   keywords: 'Indian recipes, traditional food, regional cuisine, family recipes, Indian cooking',
   authors: [{ name: 'Ramagiri Sathvika' }],
@@ -26,7 +23,7 @@ export const metadata: Metadata = {
     description: 'A nostalgic and culturally rich food website focused on traditional Indian recipes, narrated and presented in grandma-style storytelling.',
     type: 'website',
   },
-}
+};
 
 export default function RootLayout({
   children,
@@ -35,6 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Add the ChefHat favicon */}
+        <link rel="icon" href="/chefhat.svg" type="image/x-icon" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-geist-sans bg-gray-100 text-gray-900 antialiased`}
       >

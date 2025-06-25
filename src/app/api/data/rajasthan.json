@@ -1,0 +1,26 @@
+[
+  {
+    "id": "dalbati019",
+    "name": "Dal Baati Churma",
+    "image": "/images/dalbati.jpg",
+    "difficulty": "hard",
+    "isVeg": true,
+    "type": "dinner",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["wheat flour", "dal", "ghee"],
+    "stateId": "rajasthan"
+  },
+  {
+    "id": "ghevar020",
+    "name": "Ghevar",
+    "image": "/images/ghevar.jpg",
+    "difficulty": "hard",
+    "isVeg": true,
+    "type": "sweet",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": ["maida", "sugar", "ghee"],
+    "stateId": "rajasthan"
+  }
+]

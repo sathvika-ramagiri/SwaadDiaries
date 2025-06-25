@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bajra029",
+    "name": "Bajra Khichdi",
+    "image": "/images/bajra.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "dinner",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["bajra", "moong dal", "ghee"],
+    "stateId": "haryana"
+  },
+  {
+    "id": "besan030",
+    "name": "Besan Masala Roti",
+    "image": "/images/besanroti.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "breakfast",
+    "isInstant": true,
+    "isSpicy": true,
+    "ingredients": ["gram flour", "spices", "onion"],
+    "stateId": "haryana"
+  }
+]

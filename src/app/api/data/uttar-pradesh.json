@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tunday021",
+    "name": "Tunday Kababi",
+    "image": "/images/tunday.jpg",
+    "difficulty": "hard",
+    "isVeg": false,
+    "type": "dinner",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["minced meat", "spices", "ghee"],
+    "stateId": "uttar-pradesh"
+  },
+  {
+    "id": "peda022",
+    "name": "Mathura Peda",
+    "image": "/images/peda.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "sweet",
+    "isInstant": true,
+    "isSpicy": false,
+    "ingredients": ["khoya", "sugar", "cardamom"],
+    "stateId": "uttar-pradesh"
+  }
+]

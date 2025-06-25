@@ -1,0 +1,122 @@
+[
+  {
+    "id": "littichokha001",
+    "name": "Litti Chokha",
+    "image": "/images/littichokha.jpg",
+    "difficulty": "medium",
+    "isVeg": true,
+    "type": "dinner",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["wheat flour", "sattu", "brinjal", "tomato", "garlic"],
+    "stateId": "bihar"
+  },
+  {
+    "id": "thekua002",
+    "name": "Thekua",
+    "image": "/images/thekua.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "snack",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": ["wheat flour", "jaggery", "ghee", "cardamom"],
+    "stateId": "bihar"
+  },
+  {
+    "id": "khajuria003",
+    "name": "Khajuria",
+    "image": "/images/khajuria.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "snack",
+    "isInstant": true,
+    "isSpicy": false,
+    "ingredients": ["rice flour", "jaggery", "fennel seeds"],
+    "stateId": "bihar"
+  },
+  {
+    "id": "dalpitha004",
+    "name": "Dal Pitha",
+    "image": "/images/dalpitha.jpg",
+    "difficulty": "medium",
+    "isVeg": true,
+    "type": "snack",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["rice flour", "chana dal", "garlic", "green chili", "mustard seeds"],
+    "stateId": "bihar"
+  },
+  {
+    "id": "kadhiBari005",
+    "name": "Kadhi Bari",
+    "image": "/images/kadhiBari.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "lunch",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["besan", "curd", "mustard seeds", "turmeric", "green chili"],
+    "stateId": "bihar"
+  },
+  {
+    "id": "balushahi006",
+    "name": "Balushahi",
+    "image": "/images/balushahi.jpg",
+    "difficulty": "hard",
+    "isVeg": true,
+    "type": "dessert",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": ["maida", "ghee", "sugar", "cardamom"],
+    "stateId": "bihar"
+  },
+  {
+    "id": "chanaSattu007",
+    "name": "Chana Sattu Drink",
+    "image": "/images/chanaSattu.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "beverage",
+    "isInstant": true,
+    "isSpicy": false,
+    "ingredients": ["sattu", "water", "lemon", "salt", "cumin"],
+    "stateId": "bihar"
+  },
+  {
+    "id": "malpua008",
+    "name": "Malpua",
+    "image": "/images/malpua.jpg",
+    "difficulty": "medium",
+    "isVeg": true,
+    "type": "dessert",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": ["flour", "milk", "sugar", "fennel seeds", "ghee"],
+    "stateId": "bihar"
+  },
+  {
+    "id": "ghugni009",
+    "name": "Ghugni",
+    "image": "/images/ghugni.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "snack",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["black gram", "onion", "tomato", "mustard oil", "spices"],
+    "stateId": "bihar"
+  },
+  {
+    "id": "parwalKiMithai010",
+    "name": "Parwal Ki Mithai",
+    "image": "/images/parwalKiMithai.jpg",
+    "difficulty": "hard",
+    "isVeg": true,
+    "type": "dessert",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": ["parwal", "khoya", "sugar", "cardamom", "dry fruits"],
+    "stateId": "bihar"
+  }
+]

@@ -107,7 +107,7 @@ const FeaturedRecipes = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title text-swaad-dark">
+          <h2 className="section-title text-4xl">
             Featured <span className="text-swaad-orange">Recipes</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -125,6 +125,8 @@ const FeaturedRecipes = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="recipe-card group"
             >
+              <div className="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
+  
               <div className="relative h-48 overflow-hidden">
                 <Image
                   src={recipe.image}
@@ -175,10 +177,10 @@ const FeaturedRecipes = () => {
                   ))}
                 </div>
                 
-                <button className="w-full btn-primary py-2 text-sm">
-                  View Recipe
+                <button className="w-full bg-swaad-orange text-white py-2 px-4 rounded-md bg-orange-600 transition duration-300 text-sm font-medium">
+        View Recipe
                 </button>
-              </div>
+              </div></div>
             </motion.div>
           ))}
         </div>
@@ -190,9 +192,10 @@ const FeaturedRecipes = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-center mt-12"
         >
-          <button className="btn-primary text-lg px-8 py-4">
-            Explore All Recipes
-          </button>
+          <Link href="/recipe" className="inline-block">
+          <button className="text-lg text-blue-700 underline underline-offset-4 hover:text-blue-900 transition-colors duration-300 ease-in-out cursor-pointer">
+  Explore All Recipes
+</button></Link>
         </motion.div>
       </div>
     </section>

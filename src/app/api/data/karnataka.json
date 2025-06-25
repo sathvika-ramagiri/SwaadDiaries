@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bisi023",
+    "name": "Bisi Bele Bath",
+    "image": "/images/bisi.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "dinner",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["rice", "toor dal", "vegetables", "spices"],
+    "stateId": "karnataka"
+  },
+  {
+    "id": "mysorepak024",
+    "name": "Mysore Pak",
+    "image": "/images/mysorepak.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "sweet",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": ["gram flour", "ghee", "sugar"],
+    "stateId": "karnataka"
+  }
+]

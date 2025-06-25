@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface State {
   id: string
@@ -90,7 +91,7 @@ const StatesSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title text-swaad-dark">
+          <h2 className="section-title text-swaad-dark text-3xl">
             Discover <span className="text-swaad-orange">Regional</span> Flavors
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -100,47 +101,50 @@ const StatesSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {indianStates.map((state, index) => (
-            <motion.div
-              key={state.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05 }}
-              className="group cursor-pointer"
-            >
-              <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg">
-                <Image
-                  src={state.image}
-                  alt={`${state.name} cuisine`}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                
-                {/* Content Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="font-playfair text-2xl font-bold mb-1">
-                    {state.name}
-                  </h3>
-                  <p className="text-sm text-orange-200 mb-2">
-                    {state.speciality}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full">
-                      {state.recipeCount} recipes
-                    </span>
-                    <span className="text-xs opacity-90">
-                      Famous: {state.famousDish}
-                    </span>
-                  </div>
-                </div>
+  <Link href={`http://localhost:3000/states/${state.id}`} key={state.id}>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      whileHover={{ scale: 1.05 }}
+      className="group cursor-pointer"
+    >
+      <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg">
+        <Image
+          src={state.image}
+          alt={`${state.name} cuisine`}
+          fill
+          className="object-cover group-hover:scale-110 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-                {/* Hover Effect */}
-                <div className="absolute inset-0 bg-swaad-orange/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-            </motion.div>
-          ))}
+        {/* Content Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <h3 className="font-playfair text-2xl font-bold mb-1">
+            {state.name}
+          </h3>
+          <p className="text-sm text-orange-200 mb-2">
+            {state.speciality}
+          </p>
+          <div className="flex items-center justify-between">
+            <span className="text-xs bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full">
+              {state.recipeCount} recipes
+            </span>
+            <span className="text-xs opacity-90">
+              Famous: {state.famousDish}
+            </span>
+          </div>
+        </div>
+
+        {/* Hover Effect */}
+        <div className="absolute inset-0 bg-swaad-orange/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+    </motion.div>
+  </Link>
+))}
+
+        
         </div>
 
         <motion.div
@@ -150,9 +154,11 @@ const StatesSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center mt-12"
         >
-          <button className="btn-primary text-lg px-8 py-4">
-            Explore All States
-          </button>
+          <a href="/recipe">
+            <button className="text-lg text-blue-700 underline underline-offset-4 hover:text-blue-900 transition-colors duration-300 ease-in-out cursor-pointer">
+              Explore All States
+            </button>
+          </a>
         </motion.div>
       </div>
     </section>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pesarattu001",
+    "name": "Pesarattu",
+    "image": "/images/pesarattu.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "dinner",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["green gram", "onion", "chili"],
+    "stateId": "andhra-pradesh"
+  },
+  {
+    "id": "gongura002",
+    "name": "Gongura Pachadi",
+    "image": "/images/gongura.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "dinner",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["gongura leaves", "red chili", "garlic"],
+    "stateId": "andhra-pradesh"
+  }
+]

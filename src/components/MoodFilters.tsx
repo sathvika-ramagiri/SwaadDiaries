@@ -68,9 +68,9 @@ const MoodFilters = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title text-swaad-dark">
-            What's Your <span className="text-swaad-orange">Mood</span> Today?
-          </h2>
+          <h1 className="section-title text-5xl font-playfair font-bold text-swaad-dark mb-4">
+            What's Your Mood Today?
+          </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Let your cravings guide you to the perfect recipe from across India's diverse culinary landscape
           </p>
@@ -94,9 +94,9 @@ const MoodFilters = () => {
               onClick={() => handleMoodSelect(mood.id)}
             >
               {/* Background Gradient */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${mood.color} opacity-10`} />
+              <div className={`absolute inset-0  bg-gradient-to-br ${mood.color} opacity-18`} />
               
-              <div className="relative z-10">
+              <div className="relative p-3 z-10">
                 <div className="text-5xl mb-4 animate-float">
                   {mood.emoji}
                 </div>

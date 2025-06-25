@@ -1,0 +1,14 @@
+[
+  {
+    "id": "eromba051",
+    "name": "Eromba",
+    "image": "/images/eromba.jpg",
+    "difficulty": "moderate",
+    "isVeg": false,
+    "type": "dinner",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": ["fermented fish", "vegetables", "chili"],
+    "stateId": "manipur"
+  }
+]
