@@ -71,7 +71,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
 
         {/* View Recipe Button */}
         <Link
-          href={`/recipe/${recipe.id}`}
+          href={`/recipes/${recipe.id}`}
           className="block w-full text-center bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition-colors duration-200 font-medium"
         >
           View Recipe

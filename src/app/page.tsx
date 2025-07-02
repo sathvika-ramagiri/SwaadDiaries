@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Navbar from '@/components/Navbar'
 import HeroSection from '@/components/HeroSection'
 import MoodFilters from '@/components/MoodFilters'
@@ -13,8 +12,8 @@ export default function Home() {
       <HeroSection />
       <MoodFilters />
       <FeaturedRecipes />
-      <StatesSection  /> 
-      <Footer id="footer" /> {/* Add id here */}
+      <StatesSection />
+      <Footer id="footer" />
     </main>
   )
 }

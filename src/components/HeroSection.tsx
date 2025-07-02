@@ -1,10 +1,18 @@
-'use client'
+'use client';
+
 import { useState } from 'react';
-import { motion } from 'framer-motion'
-import LoginSignupPage from '@/app/auth/LoginSignupPage';
+import { motion } from 'framer-motion';
+import LoginPage from '@/app/auth/LoginPage';
+import SignupPage from '@/app/auth/SignupPage';
 
 const HeroSection = () => {
-  const [showLoginSignup, setShowLoginSignup] = useState(false);
+  const [showAuth, setShowAuth] = useState(false);
+  const [authType, setAuthType] = useState<'login' | 'signup' | null>(null);
+
+  const handleAuthClick = (type: 'login' | 'signup') => {
+    setAuthType(type);
+    setShowAuth(true);
+  };
 
   return (
     <>
@@ -62,13 +70,13 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
             <button
-              onClick={() => setShowLoginSignup(true)}
+              onClick={() => handleAuthClick('login')}
               className="btn-secondary text-lg px-8 py-4 rounded-full border-2 border-[#ffb80e] text-[#ffb80e] hover:bg-[#ffb80e] hover:text-[#230208] transition font-gamjaflower shadow-md"
             >
               LOGIN
             </button>
             <button
-              onClick={() => setShowLoginSignup(true)}
+              onClick={() => handleAuthClick('signup')}
               className="btn-primary bg-[#ffb80e] rounded-full text-lg px-8 py-4 text-[#230208] font-gamjaflower font-bold shadow-md hover:bg-[#ff6e0e] hover:text-white transition"
             >
               SIGN UP
@@ -91,9 +99,21 @@ const HeroSection = () => {
       </section>
 
       {/* Login/Signup Modal */}
-      {showLoginSignup && (
+      {showAuth && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-md flex items-center justify-center z-50">
-          <LoginSignupPage onClose={() => setShowLoginSignup(false)} />
+          {authType === 'login' && (
+  <LoginPage
+    onClose={() => setShowAuth(false)}
+    onSwitch={() => setAuthType('signup')} // Switch to Signup
+  />
+)}
+{authType === 'signup' && (
+  <SignupPage
+    onClose={() => setShowAuth(false)}
+    onSwitch={() => setAuthType('login')} // Switch to Login
+  />
+)}
+
         </div>
       )}
     </>

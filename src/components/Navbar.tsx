@@ -1,13 +1,16 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, ChefHat } from 'lucide-react';
-import LoginSignupPage from '@/app/auth/LoginSignupPage'; // Import the LoginSignupPage component
+import { Menu, X, UserCircle, ChefHat , User2} from 'lucide-react';
+import LoginPage from '@/app/auth/LoginPage';
+import SignupPage from '@/app/auth/SignupPage';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [showLoginSignup, setShowLoginSignup] = useState(false); // State to toggle LoginSignupPage
+  const [showAuth, setShowAuth] = useState(false);
+  const [authType, setAuthType] = useState<'login' | 'signup' | null>(null);
+  const [user, setUser] = useState<any>(null);
 
   const navItems = [
     { name: 'Recipe', href: '/recipe' },
@@ -15,6 +18,24 @@ const Navbar = () => {
     { name: 'SearchRecipe', href: '/search-recipe' },
     { name: 'AboutUs', href: '/about' },
   ];
+
+  const handleAuthClick = (type: 'login' | 'signup') => {
+    setAuthType(type);
+    setShowAuth(true);
+  };
+
+  useEffect(() => {
+    const userData = localStorage.getItem('user');
+    if (userData) {
+      setUser(JSON.parse(userData));
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('user');
+    setUser(null);
+    window.location.reload();
+  };
 
   return (
     <>
@@ -59,6 +80,7 @@ const Navbar = () => {
                       </Link>
                     );
                   }
+
                   return (
                     <Link
                       key={item.name}
@@ -76,20 +98,36 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Login/Signup Buttons */}
+            {/* Login/Signup/User Buttons */}
             <div className="hidden md:flex items-center space-x-4">
-              <button
-                onClick={() => setShowLoginSignup(true)} // Show LoginSignupPage on click
-                className="btn-secondary text-lg px-2 py-1 rounded-full border-2 border-[#ffb80e] text-[#ffb80e] hover:bg-[#ffb80e] hover:text-[#230208] transition font-gamjaflower shadow-md"
-              >
-                LOGIN
-              </button>
-              <button
-                onClick={() => setShowLoginSignup(true)} // Show LoginSignupPage on click
-                className="btn-primary bg-[#ffb80e] rounded-full text-lg px-2 py-1 text-[#230208] font-gamjaflower font-bold shadow-md hover:bg-[#ff6e0e] hover:text-white transition"
-              >
-                SIGN UP
-              </button>
+              {user && (
+                <>
+                  <User2 className="h-8 w-8 text-[#ffb80e] mr-2" /> {/* More professional icon and orange color */}
+                  <button
+                    onClick={handleLogout}
+                    className="text-[#ffb80e] hover:text-[#ff6e0e] font-gamjaflower text-lg" // Orange color and hover effect
+                  >
+                    Logout
+                  </button>
+                </>
+              )}
+
+              {!user && (
+                <>
+                  <button
+                    onClick={() => handleAuthClick('login')}
+                    className="btn-secondary text-lg px-2 py-1 rounded-full border-2 border-[#ffb80e] text-[#ffb80e] hover:bg-[#ffb80e] hover:text-[#230208] transition font-gamjaflower shadow-md"
+                  >
+                    LOGIN
+                  </button>
+                  <button
+                    onClick={() => handleAuthClick('signup')}
+                    className="btn-primary bg-[#ffb80e] rounded-full text-lg px-2 py-1 text-[#230208] font-gamjaflower font-bold shadow-md hover:bg-[#ff6e0e] hover:text-white transition"
+                  >
+                    SIGN UP
+                  </button>
+                </>
+              )}
             </div>
 
             {/* Mobile menu button */}
@@ -119,31 +157,57 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 px-3 pt-4">
-                <button
-                  onClick={() => setShowLoginSignup(true)} // Show LoginSignupPage on click
-                  className="text-center py-2 text-white hover:text-swaad-yellow transition-colors"
-                >
-                  LOGIN
-                </button>
-                <button
-                  onClick={() => setShowLoginSignup(true)} // Show LoginSignupPage on click
-                  className="btn-primary text-center"
-                >
-                  SIGN UP
-                </button>
+                 {user && (
+                  <>
+                    <User2 className="h-8 w-8 text-[#ffb80e] mb-2" /> {/* Mobile: professional icon and orange */}
+                    <button
+                      onClick={handleLogout}
+                      className="text-[#ffb80e] hover:text-[#ff6e0e] font-gamjaflower text-lg"
+                    >
+                      Logout
+                    </button>
+                  </>
+                )}
+
+                {!user && (
+                  <>
+                    <button
+                      onClick={() => handleAuthClick('login')}
+                      className="text-center py-2 text-white hover:text-swaad-yellow transition-colors"
+                    >
+                      LOGIN
+                    </button>
+                    <button
+                      onClick={() => handleAuthClick('signup')}
+                      className="btn-primary text-center"
+                    >
+                      SIGN UP
+                    </button>
+                  </>
+                )}
               </div>
             </div>
           </div>
         )}
       </nav>
 
-     
-          {/* LoginSignupPage */}
-{showLoginSignup && (
-  <div className="fixed inset-0 bg-black/50 backdrop-blur-md flex items-center justify-center z-50">
-    <LoginSignupPage onClose={() => setShowLoginSignup(false)} />
-  </div>
-)}
+      {/* Login/Signup Modal */}
+      {showAuth && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-md flex items-center justify-center z-50">
+          {authType === 'login' && (
+            <LoginPage
+              onClose={() => setShowAuth(false)}
+              onSwitch={() => setAuthType('signup')}
+            />
+          )}
+          {authType === 'signup' && (
+            <SignupPage
+              onClose={() => setShowAuth(false)}
+              onSwitch={() => setAuthType('login')}
+            />
+          )}
+        </div>
+      )}
     </>
   );
 };

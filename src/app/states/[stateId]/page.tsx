@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useEffect, useMemo, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { indianStates } from '../../data/indianStates';
@@ -35,24 +34,24 @@ export default function StatePage() {
   useEffect(() => {
     async function fetchRecipes() {
       try {
-        // ✅ Correct API endpoint in Next.js
         const res = await fetch(`/api/recipes?state=${stateId.toLowerCase()}`);
         const data = await res.json();
-        setAllStateRecipes(data);
+        setAllStateRecipes(Array.isArray(data) ? data : []);
       } catch (error) {
+        setAllStateRecipes([]);
         console.error('Failed to fetch recipes:', error);
       }
     }
-
     fetchRecipes();
   }, [stateId]);
 
   if (!state) return <div>State not found</div>;
 
-  const stateRecipes = useMemo(() =>
-    allStateRecipes.filter(recipe => recipe.stateId.toLowerCase() === stateId.toLowerCase()),
+  const stateRecipes = useMemo(
+    () => Array.isArray(allStateRecipes) ? allStateRecipes.filter(recipe => recipe.stateId.toLowerCase() === stateId.toLowerCase()) : [],
     [allStateRecipes, stateId]
   );
+
 
   const filteredRecipes = useMemo(() => {
     return stateRecipes.filter(recipe => {
