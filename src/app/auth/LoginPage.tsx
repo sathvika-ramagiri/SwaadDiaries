@@ -19,9 +19,8 @@ const LoginPage = ({ onSwitch, onClose }: { onSwitch: () => void; onClose: () =>
     const data = await res.json();
 
     if (res.ok) {
-      alert('Login Successful');
       localStorage.setItem('user', JSON.stringify(data.user));
-      window.location.reload();
+      window.location.reload(); // Refresh the page to reflect login status
     } else {
       alert(data.message);
     }

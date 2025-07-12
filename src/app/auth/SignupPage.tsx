@@ -20,7 +20,7 @@ const SignupPage = ({ onSwitch, onClose }: { onSwitch: () => void; onClose: () =
     const data = await res.json();
 
     if (res.ok) {
-      alert('Signup Successful');
+      
       localStorage.setItem('user', JSON.stringify(data.user));
       window.location.reload();
     } else {

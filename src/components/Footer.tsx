@@ -20,7 +20,10 @@ const Footer = ({ id }: FooterProps) => {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-6">
               <ChefHat className="h-8 w-8 text-swaad-orange" />
-              <span className="font-playfair text-2xl font-bold">SwaadDiaries</span>
+               <span className=" text-4xl font-bold">
+                <span style={{ color: '#ffb80e' }}>Swaad</span>
+                <span style={{ color: '#ff6e0e' }}>Diaries</span>
+              </span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
               Preserving India's rich culinary heritage through authentic regional recipes, 

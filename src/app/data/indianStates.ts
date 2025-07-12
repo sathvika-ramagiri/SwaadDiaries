@@ -238,7 +238,7 @@ export const indianStates: State[] = [
     id: 'jammu-kashmir',
     name: 'Jammu-Kashmir',
     speciality: 'Spicy',
-    image: 'https://media.istockphoto.com/id/1253934130/photo/mutton-masala-curry-in-plastic-container-for-home-delivery.jpg?s=1024x1024&w=is&k=20&c=jmEkMlBqDm_g6GebMr0rPVllP2HOj7MmycSeMPPD8Mg=',
+    image: 'https://images.unsplash.com/photo-1653849942524-ef2c6882d70d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     recipeCount: 45,
     famousDish: 'Rogan Josh'
   }

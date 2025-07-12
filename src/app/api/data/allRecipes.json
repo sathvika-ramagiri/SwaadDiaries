@@ -434,8 +434,166 @@
     ]
   },
   {
+  "id": "fishcurry001",
+  "name": "Bengali Fish Curry",
+  "image": "/images/bengalifishcurry.jpg",
+  "difficulty": "moderate",
+  "isVeg": false,
+  "type": "lunch",
+  "isInstant": false,
+  "isSpicy": true,
+  "ingredients": [
+    "500g rohu or katla fish, cleaned and cut",
+    "2 potatoes, diced",
+    "2 onions, finely chopped",
+    "2 tomatoes, chopped",
+    "1 tbsp ginger-garlic paste",
+    "1/2 tsp turmeric powder",
+    "1 tsp red chili powder",
+    "1 tsp cumin powder",
+    "1 tsp garam masala",
+    "1/2 tsp mustard seeds",
+    "3 tbsp mustard oil",
+    "Salt to taste",
+    "Fresh coriander leaves for garnish"
+  ],
+  "stateId": "westbengal",
+  "procedure": [
+    "Marinate fish pieces with salt and turmeric for 15 minutes.",
+    "Heat mustard oil until it smokes, fry the fish until golden. Set aside.",
+    "In the same oil, add mustard seeds, chopped onions, and sauté until golden.",
+    "Add ginger-garlic paste, potatoes, and spices. Cook until oil separates.",
+    "Add tomatoes and cook until soft. Add water and bring to boil.",
+    "Add fried fish, simmer for 10 minutes.",
+    "Garnish with fresh coriander and serve with rice."
+  ]
+}
+,{
+  "id": "ayasam001",
+  "name": "Kerala Payasam",
+  "image": "/images/keralapayasam.jpg",
+  "difficulty": "easy",
+  "isVeg": true,
+  "type": "dessert",
+  "isInstant": false,
+  "isSpicy": false,
+  "ingredients": [
+    "1/2 cup rice or vermicelli (ada or semiya)",
+    "1 liter full cream milk",
+    "1/2 cup jaggery or sugar",
+    "1/4 cup coconut milk (optional)",
+    "2 tbsp ghee",
+    "10 cashews",
+    "10 raisins",
+    "1/2 tsp cardamom powder"
+  ],
+  "stateId": "kerala",
+  "procedure": [
+    "Cook rice/vermicelli in milk until soft.",
+    "Add jaggery/sugar and stir until fully dissolved.",
+    "Add coconut milk if using and simmer briefly.",
+    "Heat ghee in a pan, fry cashews and raisins.",
+    "Add to the payasam along with cardamom powder.",
+    "Serve warm or chilled."
+  ]
+}
+,{
+  "id": "dhokla001",
+  "name": "Gujarati Dhokla",
+  "image": "/images/dhokla.jpg",
+  "difficulty": "easy",
+  "isVeg": true,
+  "type": "snack",
+  "isInstant": true,
+  "isSpicy": false,
+  "ingredients": [
+    "1 cup gram flour (besan)",
+    "1 tbsp semolina (sooji)",
+    "1 tbsp lemon juice",
+    "1 tsp ENO fruit salt or baking soda",
+    "1/2 cup water",
+    "Salt to taste",
+    "For tempering:",
+    "1 tbsp oil",
+    "1 tsp mustard seeds",
+    "2 green chilies, slit",
+    "A few curry leaves",
+    "1 tsp sugar",
+    "2 tbsp water"
+  ],
+  "stateId": "gujarat",
+  "procedure": [
+    "Mix besan, sooji, lemon juice, salt, and water into a smooth batter.",
+    "Add ENO fruit salt, mix well, and immediately pour into a greased dish.",
+    "Steam for 15-20 minutes or until a toothpick comes out clean.",
+    "Cool and cut into squares.",
+    "Heat oil, add mustard seeds, green chilies, curry leaves. Add sugar + water.",
+    "Pour tempering over dhokla and serve."
+  ]
+}
+,{
+  "id": "dalbaatichurma001",
+  "name": "Dal Baati Churma",
+  "image": "/images/dalbaatichurma.jpg",
+  "difficulty": "hard",
+  "isVeg": true,
+  "type": "lunch",
+  "isInstant": false,
+  "isSpicy": true,
+  "ingredients": [
+    "For Dal:",
+    "1/4 cup chana dal",
+    "1/4 cup toor dal",
+    "1/4 cup moong dal",
+    "1/4 cup urad dal",
+    "1/4 cup masoor dal",
+    "1 onion, finely chopped",
+    "2 tomatoes, chopped",
+    "1 tsp ginger-garlic paste",
+    "1/2 tsp turmeric powder",
+    "1 tsp red chili powder",
+    "1 tsp coriander powder",
+    "1 tsp cumin seeds",
+    "2 tbsp ghee",
+    "Salt to taste",
+    "Fresh coriander leaves for garnish",
+
+    "For Baati:",
+    "2 cups whole wheat flour",
+    "1/2 cup semolina (sooji)",
+    "1/2 cup ghee",
+    "1/2 tsp ajwain (carom seeds)",
+    "Salt to taste",
+    "Water for kneading",
+
+    "For Churma:",
+    "1 cup whole wheat flour",
+    "1/4 cup semolina",
+    "1/2 cup ghee (for dough + roasting)",
+    "1/2 cup powdered jaggery or sugar",
+    "2 tbsp chopped nuts (almonds, cashews)",
+    "1/2 tsp cardamom powder"
+  ],
+  "stateId": "rajasthan",
+  "procedure": [
+    "For Dal: Wash all the dals and pressure cook with turmeric and salt for 4-5 whistles until soft.",
+    "Heat ghee in a pan, add cumin seeds. Once they splutter, add onion, ginger-garlic paste, and sauté till golden.",
+    "Add tomatoes, red chili powder, coriander powder. Cook till tomatoes soften.",
+    "Add cooked dal, mix well and simmer for 10 minutes. Garnish with coriander leaves.",
+
+    "For Baati: Mix flour, semolina, ajwain, salt, and ghee. Knead into a firm dough using water. Divide into equal portions and shape into round balls.",
+    "Preheat the oven to 180°C. Bake the baatis for 25-30 minutes or until golden, flipping once halfway.",
+    "Dip hot baatis in melted ghee before serving.",
+
+    "For Churma: Mix flour, semolina, and ghee. Knead into a stiff dough. Make small balls and bake or fry until golden brown.",
+    "Crush into coarse powder once cooled. Mix with jaggery/sugar, nuts, and cardamom powder.",
+    "Add ghee to enhance flavor and bind the mixture slightly."
+  ]
+},
+
+  {
     "id": "sarson012",
-    "name": "Sarson Da Saag",
+    "name": "Punjabi Sarson da Saag",
     "image": "/images/sarson.jpg",
     "difficulty": "hard",
     "isVeg": true,
@@ -579,9 +737,9 @@
     ]
   },
   {
-    "id": "pesarattu001",
-    "name": "Pesarattu",
-    "image": "/images/pesarattu.jpg",
+    "id": "pesaratu001",
+    "name": "Pesaratu",
+    "image": "/images/pesaratu.jpg",
     "difficulty": "easy",
     "isVeg": true,
     "type": "dinner",
@@ -603,7 +761,7 @@
       "Transfer the batter to a bowl. Add salt and mix well. The consistency should be similar to dosa batter.",
       "Heat a non-stick tawa (griddle) on medium heat. Grease lightly with oil.",
       "Pour a ladleful of batter onto the hot tawa and spread it evenly in a circular motion to form a thin dosa.",
-      "Sprinkle finely chopped onions over the pesarattu (optional).",
+      "Sprinkle finely chopped onions over the pesaratu (optional).",
       "Drizzle a little oil around the edges and cook until golden brown and crisp.",
       "Flip and cook for another minute on the other side.",
       "Serve hot with ginger chutney or coconut chutney."
@@ -645,7 +803,7 @@
     ]
   },
   {
-    "id": "1",
+    "id": "HyderabadiBiryani",
     "name": "Hyderabadi Biryani",
     "image": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hpY2tlbiUyMGJpcnlhbml8ZW58MHx8MHx8fDA%3D",
     "difficulty": "moderate",
@@ -684,39 +842,9 @@
       "Let it rest for 10 minutes before gently mixing and serving hot with raita and mirchi ka salan."
     ]
   },
+  
   {
-    "id": "2",
-    "name": "Pesarattu",
-    "image": "https://images.unsplash.com/photo-1617196038433-5b8b3c5e6c4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVzYXJhdHR1fGVufDB8fDB8fHww",
-    "difficulty": "easy",
-    "isVeg": true,
-    "type": "snack",
-    "isInstant": false,
-    "isSpicy": false,
-    "ingredients": [
-      "1 cup whole green gram (moong dal), soaked overnight",
-      "1/4 cup rice flour",
-      "1 inch ginger, chopped",
-      "2-3 green chilies, chopped",
-      "1/2 tsp cumin seeds",
-      "1 large onion, finely chopped (for topping)",
-      "Oil for cooking",
-      "Salt to taste"
-    ],
-    "stateId": "telangana",
-    "procedure": [
-      "Drain the soaked green gram. Grind it along with ginger, green chilies, and cumin seeds to a smooth batter using minimal water.",
-      "Transfer the batter to a bowl. Add rice flour and salt. Mix well. The consistency should be similar to dosa batter.",
-      "Heat a non-stick tawa (griddle) on medium heat. Grease lightly with oil.",
-      "Pour a ladleful of batter onto the hot tawa and spread it evenly in a circular motion to form a thin dosa.",
-      "Sprinkle finely chopped onions over the pesarattu (optional).",
-      "Drizzle a little oil around the edges and cook until golden brown and crisp.",
-      "Flip and cook for another minute on the other side.",
-      "Serve hot with ginger chutney or coconut chutney."
-    ]
-  },
-  {
-    "id": "3",
+    "id": "SarvaPindi",
     "name": "Sarva Pindi",
     "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2FydmElMjBwaW5kaXxlbnwwfHwwfDB8MA%3D%3D",
     "difficulty": "moderate",
@@ -753,7 +881,7 @@
     ]
   },
   {
-    "id": "4",
+    "id": "Gongura-Pachadi",
     "name": "Gongura Pachadi",
     "image": "https://images.unsplash.com/photo-1617196038433-5b8b3c5e6c4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z29uZ3VyYSUyMHBhY2hhZGklMjB0ZWxhbmdhbmF8ZW58MHx8MHx8MA%3D%3D",
     "difficulty": "easy",
@@ -786,7 +914,7 @@
     ]
   },
   {
-    "id": "5",
+    "id": "QubaniKaMeetha",
     "name": "Qubani Ka Meetha",
     "image": "https://images.unsplash.com/photo-1617196038433-5b8b3c5e6c4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cXVibWFuaSUyMGthJTIwbWVldGhhfGVufDB8fDB8fHww",
     "difficulty": "easy",
@@ -812,7 +940,7 @@
     ]
   },
   {
-    "id": "6",
+    "id": "gongura",
     "name": "Gongura Mutton",
     "image": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z29uZ3VyYSUyMG11dHRvbnxlbnwwfHwwfHx8MA%3D%3D",
     "difficulty": "hard",
@@ -850,7 +978,7 @@
     ]
   },
   {
-    "id": "7",
+    "id": "Baigan",
     "name": "Bagara Baingan",
     "image": "https://images.unsplash.com/photo-1620082872376-efba90453a55?w=500&auto=format&fit=crop&q=60",
     "difficulty": "moderate",
@@ -895,7 +1023,7 @@
     ]
   },
   {
-    "id": "8",
+    "id": "DoubleKaMeetha",
     "name": "Double Ka Meetha",
     "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&auto=format&fit=crop&q=60",
     "difficulty": "easy",
@@ -1337,7 +1465,7 @@
     ]
   },
   {
-    "id": "1",
+    "id": "LittiChokha",
     "name": "Litti Chokha",
     "image": "/images/littichokha.jpg",
     "difficulty": "medium",
@@ -1388,7 +1516,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": "Thekuabihar",
     "name": "Thekua",
     "image": "/images/thekua.jpg",
     "difficulty": "easy",
@@ -1419,7 +1547,7 @@
     ]
   },
   {
-    "id": "3",
+    "id": "Khajuriabihar",
     "name": "Khajuria",
     "image": "/images/khajuria.jpg",
     "difficulty": "easy",
@@ -1449,7 +1577,7 @@
     ]
   },
   {
-    "id": "4",
+    "id": "Dal",
     "name": "Dal Pitha",
     "image": "/images/dalpitha.jpg",
     "difficulty": "medium",
@@ -1490,7 +1618,7 @@
     ]
   },
   {
-    "id": "5",
+    "id": "KadhiBari",
     "name": "Kadhi Bari",
     "image": "/images/kadhiBari.jpg",
     "difficulty": "easy",
@@ -1534,7 +1662,7 @@
     ]
   },
   {
-    "id": "6",
+    "id": "Balushahi",
     "name": "Balushahi",
     "image": "/images/balushahi.jpg",
     "difficulty": "hard",
@@ -1571,7 +1699,7 @@
     ]
   },
   {
-    "id": "7",
+    "id": "ChanaSattuDrink",
     "name": "Chana Sattu Drink",
     "image": "/images/chanaSattu.jpg",
     "difficulty": "easy",
@@ -1601,7 +1729,7 @@
     ]
   },
   {
-    "id": "8",
+    "id": "MalpuaBihar",
     "name": "Malpua",
     "image": "/images/malpua.jpg",
     "difficulty": "medium",
@@ -1638,7 +1766,7 @@
     ]
   },
   {
-    "id": "9",
+    "id": "Ghugnibihar",
     "name": "Ghugni",
     "image": "/images/ghugni.jpg",
     "difficulty": "easy",
@@ -1678,7 +1806,7 @@
     ]
   },
   {
-    "id": "10",
+    "id": "parwalKiMithai",
     "name": "Parwal Ki Mithai",
     "image": "/images/parwalKiMithai.jpg",
     "difficulty": "hard",
