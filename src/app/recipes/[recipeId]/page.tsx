@@ -129,46 +129,46 @@ export default function SingleRecipePage() {
           <div className="md:w-2/3 w-full">
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
               {/* Image */}
-              <div className="relative h-70 w-full">
-                
-                <Image
-                  src={recipe.image || fallbackImage}
-                  alt={recipe.name}
-                  fill
-                  className="object-contain w-5 h-4"
-                  onError={(e) => {
-                     const target = e.target as HTMLImageElement;
-                    if (target.src !== window.location.origin + fallbackImage) {
-                       target.src = fallbackImage;
-                     }
-                     }}
-                    unoptimized 
-                       />
-                <div className="absolute top-4 left-4 flex gap-2">
-                  {recipe.isVeg && (
-                    <span className="bg-green-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
-                      Vegetarian
-                    </span>
-                  )}
-                  {recipe.isSpicy && (
-                    <span className="bg-red-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
-                      Spicy
-                    </span>
-                  )}
-                  {recipe.isInstant && (
-                    <span className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
-                      Instant
-                    </span>
-                  )}
-                </div>
-                <span className="absolute top-4 right-4 bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full shadow">
-                  {recipe.difficulty?.charAt(0).toUpperCase() + recipe.difficulty?.slice(1) || 'Medium'}
-                </span>
-                <span className="absolute bottom-4 left-4 bg-white/80 text-gray-800 text-xs font-medium px-3 py-1 rounded-full flex items-center gap-1 shadow">
-                  <svg className="w-4 h-4 text-orange-500 inline" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 12.414a2 2 0 0 0-2.828 0l-4.243 4.243a8 8 0 1 1 11.314 0z"/><circle cx="12" cy="12" r="3"/></svg>
-                  {recipe.stateId?.charAt(0).toUpperCase() + recipe.stateId?.slice(1)}
-                </span>
-              </div>
+            <div className="relative h-64 w-full bg-gray-50">
+  <Image
+    src={recipe.image || fallbackImage}
+    alt={recipe.name}
+    fill
+    className={`w-full h-full ${recipe.image ? 'object-cover' : 'object-contain p-8'}`}
+    onError={(e) => {
+      const target = e.target as HTMLImageElement;
+      if (target.src !== window.location.origin + fallbackImage) {
+        target.src = fallbackImage;
+      }
+    }}
+    unoptimized
+    priority
+  />
+  <div className="absolute top-4 left-4 flex gap-2">
+    {recipe.isVeg && (
+      <span className="bg-green-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
+        Vegetarian
+      </span>
+    )}
+    {recipe.isSpicy && (
+      <span className="bg-red-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
+        Spicy
+      </span>
+    )}
+    {recipe.isInstant && (
+      <span className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
+        Instant
+      </span>
+    )}
+  </div>
+  <span className="absolute top-4 right-4 bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full shadow">
+    {recipe.difficulty?.charAt(0).toUpperCase() + recipe.difficulty?.slice(1) || 'Medium'}
+  </span>
+  <span className="absolute bottom-4 left-4 bg-white/80 text-gray-800 text-xs font-medium px-3 py-1 rounded-full flex items-center gap-1 shadow">
+    <svg className="w-4 h-4 text-orange-500 inline" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 12.414a2 2 0 0 0-2.828 0l-4.243 4.243a8 8 0 1 1 11.314 0z"/><circle cx="12" cy="12" r="3"/></svg>
+    {recipe.stateId?.charAt(0).toUpperCase() + recipe.stateId?.slice(1)}
+  </span>
+</div>
 
               {/* Details */}
               <div className="p-8">
