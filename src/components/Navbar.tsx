@@ -8,7 +8,7 @@ import LoginPage from '@/app/auth/LoginPage';
 import SignupPage from '@/app/auth/SignupPage';
 import allRecipes from '@/app/api/data/allRecipes.json';
 
-// Define the recipe type based on your data
+// Define recipe type
 type Recipe = {
   id: string;
   name: string;
@@ -24,6 +24,19 @@ type Recipe = {
   procedure?: string[];
 };
 
+// Define nav item type
+type NavItem = {
+  name: string;
+  href?: string;
+};
+
+const navItems: NavItem[] = [
+  { name: 'Recipe', href: '/recipe' },
+  { name: 'Community', href: '/community' },
+  { name: 'SearchRecipe' }, // no href, handled manually
+  { name: 'AboutUs', href: '/about' },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showAuth, setShowAuth] = useState(false);
@@ -34,13 +47,6 @@ const Navbar = () => {
   const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>([]);
   const router = useRouter();
   const searchRef = useRef<HTMLDivElement | null>(null);
-
-  const navItems = [
-    { name: 'Recipe', href: '/recipe' },
-    { name: 'Community', href: '/community' },
-    { name: 'SearchRecipe', href: '/searchrecipe' },
-    { name: 'AboutUs', href: '/about' },
-  ];
 
   const handleAuthClick = (type: 'login' | 'signup') => {
     setAuthType(type);
@@ -58,6 +64,7 @@ const Navbar = () => {
         setFilteredRecipes([]);
       }
     };
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
@@ -80,19 +87,16 @@ const Navbar = () => {
       const filtered = (allRecipes as Recipe[]).filter(recipe =>
         recipe.name.toLowerCase().includes(query.toLowerCase())
       );
-      setFilteredRecipes(filtered.slice(0, 5)); // Show max 5 suggestions
+      setFilteredRecipes(filtered.slice(0, 5));
     } else {
       setFilteredRecipes([]);
     }
   };
 
   const handleRecipeSelect = (recipe: Recipe) => {
-    // Close search UI immediately
     setShowSearchInput(false);
     setSearchQuery('');
     setFilteredRecipes([]);
-    
-    // Navigate to recipe page
     router.push(`/recipes/${recipe.id}`);
   };
 
@@ -102,9 +106,8 @@ const Navbar = () => {
     setFilteredRecipes([]);
   };
 
-  // Remove the automatic timeout - let user control when to close
   const handleSearchContainerClick = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Prevent event bubbling
+    e.stopPropagation();
   };
 
   return (
@@ -121,7 +124,7 @@ const Navbar = () => {
               </span>
             </Link>
 
-            {/* Navigation Items */}
+            {/* Desktop Nav Items */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 {navItems.map((item) => {
@@ -139,11 +142,7 @@ const Navbar = () => {
 
                   if (item.name === 'SearchRecipe') {
                     return (
-                      <div
-                        key={item.name}
-                        className="relative"
-                        ref={searchRef}
-                      >
+                      <div key={item.name} className="relative" ref={searchRef}>
                         {!showSearchInput ? (
                           <button
                             onClick={handleSearchRecipeClick}
@@ -174,7 +173,7 @@ const Navbar = () => {
                                 </button>
                               </div>
 
-                              {/* Recipe Suggestions */}
+                              {/* Suggestions */}
                               {filteredRecipes.length > 0 && (
                                 <div className="absolute top-12 left-0 bg-white rounded-lg shadow-lg z-50 w-full max-h-60 overflow-y-auto">
                                   {filteredRecipes.map((recipe) => (
@@ -192,7 +191,7 @@ const Navbar = () => {
                                 </div>
                               )}
 
-                              {/* No results message */}
+                              {/* No results */}
                               {searchQuery && filteredRecipes.length === 0 && (
                                 <div className="absolute top-12 left-0 bg-white rounded-lg shadow-lg z-50 w-full">
                                   <div className="px-4 py-2 text-gray-500 text-sm">
@@ -207,24 +206,21 @@ const Navbar = () => {
                     );
                   }
 
-                  return (
+                  // Normal nav links
+                  return item.href ? (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className={`hover:scale-105 text-2xl transform transition-all duration-200 ${
-                        ['Recipe', 'Community', 'AboutUs'].includes(item.name)
-                          ? 'font-gamjaflower text-[#f4f1f1]'
-                          : 'nav-link'
-                      }`}
+                      className="hover:scale-105 text-2xl transform transition-all duration-200 font-gamjaflower text-[#f4f1f1]"
                     >
                       {item.name}
                     </Link>
-                  );
+                  ) : null;
                 })}
               </div>
             </div>
 
-            {/* Auth Section */}
+            {/* Auth */}
             <div className="hidden md:flex items-center space-x-4">
               {user ? (
                 <>
@@ -254,7 +250,7 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* Mobile menu toggle */}
+            {/* Mobile toggle */}
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -266,7 +262,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Nav */}
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-black/50 backdrop-blur-lg">
@@ -284,8 +280,8 @@ const Navbar = () => {
                     </div>
                   );
                 }
-                
-                return (
+
+                return item.href ? (
                   <Link
                     key={item.name}
                     href={item.href}
@@ -294,7 +290,7 @@ const Navbar = () => {
                   >
                     {item.name}
                   </Link>
-                );
+                ) : null;
               })}
               <div className="flex flex-col space-y-2 px-3 pt-4">
                 {user ? (

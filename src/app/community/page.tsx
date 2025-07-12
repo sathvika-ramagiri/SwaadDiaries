@@ -654,10 +654,8 @@ export default function Community() {
         </div>
       )}
 
-      {/* Footer */}
-      <div ref={footerRef}>
-        <Footer />
-      </div>
+     <Footer id="footer" />
+      
     </main>
   );
 }

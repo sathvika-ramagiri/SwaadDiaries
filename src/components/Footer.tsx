@@ -27,7 +27,7 @@ const Footer = ({ id }: FooterProps) => {
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
               Preserving India's rich culinary heritage through authentic regional recipes, 
-              told with the warmth of grandma's storytelling. Join us in celebrating the 
+              told with the warmth . Join us in celebrating the 
               diverse tastes of India's states.
             </p>
             <div className="flex items-center space-x-2 text-sm text-gray-400">
@@ -51,14 +51,10 @@ const Footer = ({ id }: FooterProps) => {
                   Community
                 </Link>
               </li>
+              
               <li>
-                <Link href="/search-recipe" className="text-gray-300 hover:text-swaad-orange transition-colors">
-                  Search by Ingredients
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-swaad-orange transition-colors">
-                  About Us
+                <Link href="/recipe" className="text-gray-300 hover:text-swaad-orange transition-colors">
+                  Recipes
                 </Link>
               </li>
             </ul>

@@ -34,7 +34,7 @@ interface Comment {
 export default function SingleRecipePage() {
   const params = useParams();
   const recipeId = params.recipeId as string;
-  
+
   const [user, setUser] = useState<any>(null);
   const [commentText, setCommentText] = useState('');
   const [comments, setComments] = useState<Comment[]>([]);
@@ -42,6 +42,8 @@ export default function SingleRecipePage() {
   const [postingComment, setPostingComment] = useState(false);
 
   const recipe: Recipe | undefined = (allRecipes as Recipe[]).find((r) => r.id === recipeId);
+  const fallbackImage = '/images/chef.svg';
+  const isFallbackImage = !recipe?.image;
 
   useEffect(() => {
     const userData = localStorage.getItem('user');
@@ -50,7 +52,7 @@ export default function SingleRecipePage() {
     }
     fetchComments();
   }, [recipeId]);
-  const fallbackImage = '/images/chef.svg'; 
+
   const fetchComments = async () => {
     setLoadingComments(true);
     try {
@@ -58,9 +60,6 @@ export default function SingleRecipePage() {
       if (res.ok) {
         const data = await res.json();
         setComments(data);
-      } else {
-        const error = await res.json().catch(() => ({}));
-  // handle error, e.g. show error.message
       }
     } catch (error) {
       console.error('Error fetching comments:', error);
@@ -87,7 +86,7 @@ export default function SingleRecipePage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           recipeId,
-          userId: user.email, // Using email as userId for simplicity, ideally use a unique ID from DB
+          userId: user.email,
           userName: user.name,
           text: commentText,
         }),
@@ -95,7 +94,7 @@ export default function SingleRecipePage() {
 
       if (res.ok) {
         setCommentText('');
-        fetchComments(); // Refresh comments
+        fetchComments();
       } else {
         const errorData = await res.json();
         alert(errorData.error || 'Failed to post comment.');
@@ -122,53 +121,53 @@ export default function SingleRecipePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white flex flex-col">
       <Navbar />
-
       <div className="container mx-auto px-4 py-18 flex-1">
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Recipe Card - Left */}
+          {/* Recipe Card */}
           <div className="md:w-2/3 w-full">
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
               {/* Image */}
-            <div className="relative h-64 w-full bg-gray-50">
-  <Image
-    src={recipe.image || fallbackImage}
-    alt={recipe.name}
-    fill
-    className={`w-full h-full ${recipe.image ? 'object-cover' : 'object-contain p-8'}`}
-    onError={(e) => {
-      const target = e.target as HTMLImageElement;
-      if (target.src !== window.location.origin + fallbackImage) {
-        target.src = fallbackImage;
-      }
-    }}
-    unoptimized
-    priority
-  />
-  <div className="absolute top-4 left-4 flex gap-2">
-    {recipe.isVeg && (
-      <span className="bg-green-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
-        Vegetarian
-      </span>
-    )}
-    {recipe.isSpicy && (
-      <span className="bg-red-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
-        Spicy
-      </span>
-    )}
-    {recipe.isInstant && (
-      <span className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
-        Instant
-      </span>
-    )}
-  </div>
-  <span className="absolute top-4 right-4 bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full shadow">
-    {recipe.difficulty?.charAt(0).toUpperCase() + recipe.difficulty?.slice(1) || 'Medium'}
-  </span>
-  <span className="absolute bottom-4 left-4 bg-white/80 text-gray-800 text-xs font-medium px-3 py-1 rounded-full flex items-center gap-1 shadow">
-    <svg className="w-4 h-4 text-orange-500 inline" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 12.414a2 2 0 0 0-2.828 0l-4.243 4.243a8 8 0 1 1 11.314 0z"/><circle cx="12" cy="12" r="3"/></svg>
-    {recipe.stateId?.charAt(0).toUpperCase() + recipe.stateId?.slice(1)}
-  </span>
-</div>
+              <div className="relative h-64 w-full bg-gray-50">
+                <Image
+                  src={recipe.image || fallbackImage}
+                  alt={recipe.name || 'Recipe Image'}
+                  fill
+                  className={`w-full h-full ${isFallbackImage ? 'object-cover p-4' : 'object-contain'}`}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    if (target.src !== window.location.origin + fallbackImage) {
+                      target.src = fallbackImage;
+                    }
+                  }}
+                  unoptimized
+                  priority
+                />
+                {/* Badges */}
+                <div className="absolute top-4 left-4 flex gap-2">
+                  {recipe.isVeg && (
+                    <span className="bg-green-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
+                      Vegetarian
+                    </span>
+                  )}
+                  {recipe.isSpicy && (
+                    <span className="bg-red-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
+                      Spicy
+                    </span>
+                  )}
+                  {recipe.isInstant && (
+                    <span className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-semibold shadow">
+                      Instant
+                    </span>
+                  )}
+                </div>
+                <span className="absolute top-4 right-4 bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full shadow">
+                  {recipe.difficulty?.charAt(0).toUpperCase() + recipe.difficulty?.slice(1) || 'Medium'}
+                </span>
+                <span className="absolute bottom-4 left-4 bg-white/80 text-gray-800 text-xs font-medium px-3 py-1 rounded-full flex items-center gap-1 shadow">
+                  <svg className="w-4 h-4 text-orange-500 inline" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 12.414a2 2 0 0 0-2.828 0l-4.243 4.243a8 8 0 1 1 11.314 0z"/><circle cx="12" cy="12" r="3"/></svg>
+                  {recipe.stateId?.charAt(0).toUpperCase() + recipe.stateId?.slice(1)}
+                </span>
+              </div>
 
               {/* Details */}
               <div className="p-8">
@@ -218,22 +217,19 @@ export default function SingleRecipePage() {
                   </ol>
                 </div>
 
-                {/* Additional Info */}
+                {/* Tips */}
                 <div className="bg-orange-50 rounded-lg p-4 text-gray-700">
                   <h3 className="font-semibold mb-2">Chef's Tip</h3>
-                  <p>
-                    For best results, use fresh ingredients and serve hot. Share your own tips and photos with the community!
-                  </p>
+                  <p>For best results, use fresh ingredients and serve hot. Share your own tips and photos with the community!</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Comments/Discussion - Right */}
+          {/* Comments Section */}
           <div className="md:w-1/3 w-full">
             <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
               <h2 className="text-xl font-bold text-orange-700 mb-4">Comments & Discussion</h2>
-              {/* Comment form */}
               {user ? (
                 <form onSubmit={handlePostComment} className="mb-4">
                   <textarea
@@ -255,8 +251,6 @@ export default function SingleRecipePage() {
               ) : (
                 <p className="text-gray-600 mb-4">Please login to post a comment.</p>
               )}
-
-              {/* Display comments */}
               {loadingComments ? (
                 <p className="text-gray-500">Loading comments...</p>
               ) : comments.length === 0 ? (
@@ -280,9 +274,7 @@ export default function SingleRecipePage() {
           </div>
         </div>
       </div>
-
       <Footer id="footer" />
     </div>
   );
 }
-
