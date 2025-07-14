@@ -31,9 +31,9 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { name: 'Recipe', href: '/recipe' },
+  { name: 'States', href: '/recipe' },
   { name: 'Community', href: '/community' },
-  { name: 'SearchRecipe' }, // no href, handled manually
+  { name: 'SearchRecipe' }, 
   { name: 'AboutUs', href: '/about' },
 ];
 

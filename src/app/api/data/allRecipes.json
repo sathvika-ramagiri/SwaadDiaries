@@ -40,7 +40,7 @@
   {
     "id": "thekua033",
     "name": "Thekua",
-    "image": "/images/thekua.jpg",
+    "image": "/images/thekua.jpeg",
     "difficulty": "easy",
     "isVeg": true,
     "type": "snack",
@@ -70,7 +70,7 @@
   {
     "id": "dhooska034",
     "name": "Dhooska",
-    "image": "/images/dhooska.jpg",
+    "image": "/images/dhooska.jpeg",
     "difficulty": "moderate",
     "isVeg": true,
     "type": "snack",
@@ -141,7 +141,7 @@
   {
     "id": "siddu048",
     "name": "Siddu",
-    "image": "/images/siddu.jpg",
+    "image": "/images/siddu.jpeg",
     "difficulty": "moderate",
     "isVeg": true,
     "type": "snack",
@@ -383,56 +383,103 @@
     ]
   },
   {
-    "id": "chole011",
-    "name": "Chole Bhature",
-    "image": "/images/cholebhature.jpg",
-    "difficulty": "moderate",
-    "isVeg": true,
-    "type": "dinner",
-    "isInstant": false,
-    "isSpicy": true,
-    "ingredients": [
-      "For Chole:",
-      "1 cup chickpeas (chole), soaked overnight",
-      "1 large onion, finely chopped",
-      "2 tomatoes, pureed",
-      "1 tbsp ginger-garlic paste",
-      "1 tsp cumin powder",
-      "1 tsp coriander powder",
-      "1/2 tsp turmeric powder",
-      "1 tsp red chili powder",
-      "1 tsp chole masala",
-      "2-3 green chilies, slit",
-      "2 tbsp oil",
-      "Water as needed",
-      "Salt to taste",
-      "Fresh coriander for garnish",
-      "For Bhature:",
-      "2 cups all-purpose flour (maida)",
-      "1/4 cup semolina (sooji)",
-      "1/4 cup yogurt",
-      "1/2 tsp baking soda",
-      "1 tsp sugar",
-      "1/2 tsp salt",
-      "Water as needed to knead",
-      "Oil for deep frying"
-    ],
-    "stateId": "punjab",
-    "procedure": [
-      "For Chole: Pressure cook soaked chickpeas with a pinch of baking soda and enough water for 5-6 whistles until soft. Drain and set aside.",
-      "Heat oil in a pan. Add chopped onion and sauté until golden brown. Add ginger-garlic paste and green chilies, sauté for a minute.",
-      "Add tomato puree and cook until oil separates. Stir in cumin powder, coriander powder, turmeric powder, red chili powder, chole masala, and salt. Cook for 2-3 minutes.",
-      "Add the cooked chickpeas and 1 cup of water. Bring to a boil, then simmer for 10-15 minutes, mashing a few chickpeas to thicken the gravy.",
-      "Garnish with fresh coriander.",
-      "For Bhature: In a large bowl, combine all-purpose flour, semolina, yogurt, baking soda, sugar, and salt. Mix well.",
-      "Gradually add water and knead into a soft, smooth dough. Cover with a damp cloth and let it rest for 1-2 hours.",
-      "Heat oil for deep frying in a kadai.",
-      "Take small portions of the dough, roll them into oval or round shapes.",
-      "Gently slide the rolled bhature into the hot oil. Press gently with a slotted spoon to puff them up. Fry until golden brown on both sides.",
-      "Remove and drain excess oil on paper towels.",
-      "Serve hot chole with freshly fried bhature, sliced onions, and lemon wedges."
-    ]
-  },
+  "id": "aloomatar058",
+  "name": "Aloo Matar",
+  "image": "/images/aloomatar.jpg",
+  "difficulty": "easy",
+  "isVeg": true,
+  "type": "dinner",
+  "isInstant": false,
+  "isSpicy": true,
+  "ingredients": [
+    "2 medium potatoes, peeled and cubed",
+    "1 cup green peas (fresh or frozen)",
+    "1 onion, finely chopped",
+    "2 tomatoes, chopped",
+    "1 tsp ginger-garlic paste",
+    "1/2 tsp turmeric powder",
+    "1 tsp cumin seeds",
+    "1 tsp coriander powder",
+    "1/2 tsp garam masala",
+    "1/2 tsp red chili powder",
+    "1/2 tsp cumin powder",
+    "2 tbsp oil",
+    "Salt to taste",
+    "Water as needed",
+    "Fresh coriander leaves for garnish"
+  ],
+  "stateId": "punjab",
+  "procedure": [
+    "Heat oil in a pan. Add cumin seeds and let them splutter.",
+    "Add chopped onions and sauté until golden brown.",
+    "Add ginger-garlic paste and cook for a minute until the raw smell goes away.",
+    "Add chopped tomatoes and cook until they soften and oil begins to separate.",
+    "Add turmeric powder, red chili powder, coriander powder, cumin powder, and salt. Mix well.",
+    "Add the cubed potatoes and sauté for a few minutes.",
+    "Add green peas and enough water to cover the vegetables. Bring to a boil.",
+    "Cover and simmer on low heat for 15–20 minutes or until the potatoes are tender.",
+    "Sprinkle garam masala and garnish with chopped coriander leaves.",
+    "Serve hot with rice, roti, or paratha."
+  ]
+}
+,{
+  "id": "anarsa059",
+  "name": "Anarsa",
+  "image": "/images/anarsa.jpg",
+  "difficulty": "moderate",
+  "isVeg": true,
+  "type": "sweet",
+  "isInstant": false,
+  "isSpicy": false,
+  "ingredients": [
+    "1 cup raw rice",
+    "3/4 cup jaggery, grated",
+    "1/2 tsp cardamom powder",
+    "Poppy seeds for coating",
+    "Ghee or oil for frying"
+  ],
+  "stateId": "maharashtra",
+  "procedure": [
+    "Soak raw rice in water for 3 days, changing the water daily.",
+    "After 3 days, drain the rice completely and spread it on a cloth to dry slightly until damp but not fully dry.",
+    "Grind the damp rice to a fine powder.",
+    "Mix the rice flour with grated jaggery and cardamom powder. Knead into a soft dough. Let it rest for 1-2 days in an airtight container.",
+    "Divide the dough into small balls. Flatten each into a disc and coat one side with poppy seeds.",
+    "Heat ghee or oil in a pan over medium heat.",
+    "Place the anarsa poppy-side up in the pan and fry gently until golden brown. Do not flip.",
+    "Remove carefully and drain excess oil.",
+    "Cool completely and store in an airtight container."
+  ]
+}
+,{
+  "id": "ariselu060",
+  "name": "Ariselu",
+  "image": "/images/ariselu.jpg",
+  "difficulty": "moderate",
+  "isVeg": true,
+  "type": "sweet",
+  "isInstant": false,
+  "isSpicy": false,
+  "ingredients": [
+    "1 cup raw rice",
+    "3/4 cup jaggery, grated",
+    "1/2 tsp cardamom powder",
+    "1 tsp sesame seeds",
+    "Ghee or oil for deep frying"
+  ],
+  "stateId": "andhra-pradesh",
+  "procedure": [
+    "Soak raw rice for 6–8 hours. Drain and dry it partially on a cloth until slightly moist.",
+    "Grind into a fine powder using a mixer or flour mill.",
+    "Heat jaggery with 1/4 cup water until it reaches soft-ball consistency (a drop in water forms a soft ball).",
+    "Slowly add the rice flour, stirring continuously to form a soft dough.",
+    "Add cardamom powder and mix well. Let the dough rest for a few hours or overnight for best texture.",
+    "Shape into small balls and flatten into discs. Sprinkle sesame seeds on top.",
+    "Heat oil or ghee in a deep pan. Fry each ariselu on medium heat until golden brown, pressing lightly while frying to remove excess jaggery foam.",
+    "Drain and cool. Store in an airtight container."
+  ]
+}
+,
   {
   "id": "fishcurry001",
   "name": "Bengali Fish Curry",
@@ -531,65 +578,7 @@
     "Pour tempering over dhokla and serve."
   ]
 }
-,{
-  "id": "dalbaatichurma001",
-  "name": "Dal Baati Churma",
-  "image": "/images/dalbaatichurma.jpg",
-  "difficulty": "hard",
-  "isVeg": true,
-  "type": "lunch",
-  "isInstant": false,
-  "isSpicy": true,
-  "ingredients": [
-    "For Dal:",
-    "1/4 cup chana dal",
-    "1/4 cup toor dal",
-    "1/4 cup moong dal",
-    "1/4 cup urad dal",
-    "1/4 cup masoor dal",
-    "1 onion, finely chopped",
-    "2 tomatoes, chopped",
-    "1 tsp ginger-garlic paste",
-    "1/2 tsp turmeric powder",
-    "1 tsp red chili powder",
-    "1 tsp coriander powder",
-    "1 tsp cumin seeds",
-    "2 tbsp ghee",
-    "Salt to taste",
-    "Fresh coriander leaves for garnish",
-
-    "For Baati:",
-    "2 cups whole wheat flour",
-    "1/2 cup semolina (sooji)",
-    "1/2 cup ghee",
-    "1/2 tsp ajwain (carom seeds)",
-    "Salt to taste",
-    "Water for kneading",
-
-    "For Churma:",
-    "1 cup whole wheat flour",
-    "1/4 cup semolina",
-    "1/2 cup ghee (for dough + roasting)",
-    "1/2 cup powdered jaggery or sugar",
-    "2 tbsp chopped nuts (almonds, cashews)",
-    "1/2 tsp cardamom powder"
-  ],
-  "stateId": "rajasthan",
-  "procedure": [
-    "For Dal: Wash all the dals and pressure cook with turmeric and salt for 4-5 whistles until soft.",
-    "Heat ghee in a pan, add cumin seeds. Once they splutter, add onion, ginger-garlic paste, and sauté till golden.",
-    "Add tomatoes, red chili powder, coriander powder. Cook till tomatoes soften.",
-    "Add cooked dal, mix well and simmer for 10 minutes. Garnish with coriander leaves.",
-
-    "For Baati: Mix flour, semolina, ajwain, salt, and ghee. Knead into a firm dough using water. Divide into equal portions and shape into round balls.",
-    "Preheat the oven to 180°C. Bake the baatis for 25-30 minutes or until golden, flipping once halfway.",
-    "Dip hot baatis in melted ghee before serving.",
-
-    "For Churma: Mix flour, semolina, and ghee. Knead into a stiff dough. Make small balls and bake or fry until golden brown.",
-    "Crush into coarse powder once cooled. Mix with jaggery/sugar, nuts, and cardamom powder.",
-    "Add ghee to enhance flavor and bind the mixture slightly."
-  ]
-},
+,
 
   {
     "id": "sarson012",
@@ -629,9 +618,114 @@
     ]
   },
   {
+  "id": "jalebi070",
+  "name": "Jalebi",
+  "image": "/images/jalebi.jpg",
+  "difficulty": "moderate",
+  "isVeg": true,
+  "type": "sweet",
+  "isInstant": false,
+  "isSpicy": false,
+  "ingredients": [
+    "1 cup all-purpose flour (maida)",
+    "2 tbsp cornflour",
+    "1/4 tsp baking soda",
+    "3/4 cup water (adjust as needed)",
+    "1/2 cup curd (yogurt)",
+    "A pinch of turmeric or orange food color",
+    "Oil or ghee for frying",
+    "For Sugar Syrup:",
+    "1 cup sugar",
+    "1/2 cup water",
+    "1/4 tsp cardamom powder",
+    "Few saffron strands",
+    "1/2 tsp lemon juice"
+  ],
+  "stateId": "rajasthan",
+  "procedure": [
+    "Mix maida, cornflour, turmeric/food color, and curd. Add water gradually to make a smooth, flowing batter.",
+    "Cover and let it ferment for 8–12 hours.",
+    "Prepare sugar syrup: Boil sugar and water until it reaches one-string consistency. Add cardamom, saffron, and lemon juice. Keep warm.",
+    "Fill the fermented batter in a piping bag or squeeze bottle.",
+    "Heat oil/ghee in a flat pan. Squeeze batter into hot oil in spiral shapes.",
+    "Fry until golden and crisp. Remove and dip immediately into warm sugar syrup for 30–40 seconds.",
+    "Serve warm or cool."
+  ]
+}
+,
+  {
+    "id": "jalebi_up072",
+    "name": "Jalebi",
+    "image": "/images/jalebi.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "sweet",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": [
+      "1 cup all-purpose flour (maida)",
+      "2 tbsp cornflour",
+      "1/4 tsp baking soda",
+      "3/4 cup water (adjust as needed)",
+      "1/2 cup curd (yogurt)",
+      "A pinch of turmeric or orange food color",
+      "Oil or ghee for frying",
+      "For Sugar Syrup:",
+      "1 cup sugar",
+      "1/2 cup water",
+      "1/4 tsp cardamom powder",
+      "Few saffron strands",
+      "1/2 tsp lemon juice"
+    ],
+    "stateId": "uttar-pradesh",
+    "procedure": [
+      "Mix maida, cornflour, turmeric/food color, and curd. Add water gradually to make a smooth, flowing batter.",
+      "Cover and ferment the batter for 8–12 hours in a warm place.",
+      "Prepare sugar syrup by boiling sugar and water to one-string consistency. Add cardamom, saffron, and lemon juice. Keep warm.",
+      "Fill the batter in a squeeze bottle or piping bag.",
+      "Heat ghee or oil in a flat pan. Squeeze batter into hot oil in spiral shapes.",
+      "Fry until crisp and golden. Remove and dip in warm sugar syrup for 30–40 seconds.",
+      "Serve warm for best taste."
+    ]
+  },
+  {
+    "id": "imarti_up073",
+    "name": "Imarti",
+    "image": "/images/imarti.jpg",
+    "difficulty": "hard",
+    "isVeg": true,
+    "type": "sweet",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": [
+      "1 cup urad dal (soaked for 4–5 hours)",
+      "1/4 tsp cardamom powder",
+      "A pinch of orange food color",
+      "Ghee or oil for frying",
+      "For Sugar Syrup:",
+      "1 cup sugar",
+      "1/2 cup water",
+      "1/4 tsp cardamom powder",
+      "Few saffron strands",
+      "1/2 tsp rose water (optional)"
+    ],
+    "stateId": "uttar-pradesh",
+    "procedure": [
+      "Grind soaked urad dal into a thick, fluffy batter with minimal water.",
+      "Whisk the batter thoroughly for aeration. Add cardamom powder and food color.",
+      "Prepare sugar syrup with sugar and water to one-string consistency. Add saffron, cardamom, and rose water. Keep warm.",
+      "Fill the batter into a piping bag with a small round tip.",
+      "Heat ghee in a flat pan and pipe flower-like Imarti rings into the hot ghee.",
+      "Fry on medium heat until firm and golden. Do not overcook.",
+      "Dip each fried Imarti in warm syrup for 30–60 seconds and remove.",
+      "Serve warm or cooled."
+    ]
+  }
+,
+  {
     "id": "dalbati019",
     "name": "Dal Baati Churma",
-    "image": "/images/dalbati.jpg",
+    "image": "/images/daalbaati.jpg",
     "difficulty": "hard",
     "isVeg": true,
     "type": "dinner",
@@ -737,36 +831,90 @@
     ]
   },
   {
-    "id": "pesaratu001",
-    "name": "Pesaratu",
-    "image": "/images/pesaratu.jpg",
-    "difficulty": "easy",
-    "isVeg": true,
-    "type": "dinner",
-    "isInstant": false,
-    "isSpicy": true,
-    "ingredients": [
-      "1 cup whole green gram (moong dal), soaked overnight",
-      "1/4 cup rice",
-      "1 inch ginger, chopped",
-      "2-3 green chilies, chopped",
-      "1/2 tsp cumin seeds",
-      "1 large onion, finely chopped (for topping)",
-      "Oil for cooking",
-      "Salt to taste"
-    ],
-    "stateId": "andhra-pradesh",
-    "procedure": [
-      "Drain the soaked green gram and rice. Grind them together with ginger, green chilies, and cumin seeds to a smooth batter using minimal water.",
-      "Transfer the batter to a bowl. Add salt and mix well. The consistency should be similar to dosa batter.",
-      "Heat a non-stick tawa (griddle) on medium heat. Grease lightly with oil.",
-      "Pour a ladleful of batter onto the hot tawa and spread it evenly in a circular motion to form a thin dosa.",
-      "Sprinkle finely chopped onions over the pesaratu (optional).",
-      "Drizzle a little oil around the edges and cook until golden brown and crisp.",
-      "Flip and cook for another minute on the other side.",
-      "Serve hot with ginger chutney or coconut chutney."
-    ]
-  },
+  "id": "pootharekulu061",
+  "name": "Pootharekulu",
+  "image": "/images/pootharekulu.jpg",
+  "difficulty": "hard",
+  "isVeg": true,
+  "type": "sweet",
+  "isInstant": false,
+  "isSpicy": false,
+  "ingredients": [
+    "1 cup rice (preferably fine variety like jaya or sona masoori)",
+    "1 cup powdered sugar",
+    "1/4 cup ghee, melted",
+    "Dry fruits and cardamom powder (optional)"
+  ],
+  "stateId": "andhra-pradesh",
+  "procedure": [
+    "Soak rice for 4–6 hours. Grind it into a thin, smooth batter with water.",
+    "Prepare a very thin crepe-like sheet on an inverted heated pot (traditional method) or dosa pan using a cloth dipped in the batter.",
+    "Cook the rice film for a few seconds and gently remove it. Let it cool.",
+    "Place the sheet on a flat surface, sprinkle powdered sugar, drizzle ghee, and optionally add dry fruits.",
+    "Fold into a rectangle or roll. Repeat for remaining sheets.",
+    "Store in an airtight container."
+  ]
+}
+,{
+  "id": "gavvalu062",
+  "name": "Gavvalu",
+  "image": "/images/gavvalu.jpg",
+  "difficulty": "moderate",
+  "isVeg": true,
+  "type": "sweet",
+  "isInstant": false,
+  "isSpicy": false,
+  "ingredients": [
+    "1 cup all-purpose flour (maida)",
+    "1/4 cup semolina (optional)",
+    "1/4 cup ghee",
+    "Water to knead",
+    "Oil for deep frying",
+    "1/2 cup sugar",
+    "1/4 cup water",
+    "1/2 tsp cardamom powder"
+  ],
+  "stateId": "andhra-pradesh",
+  "procedure": [
+    "Mix flour, semolina (if using), and ghee. Add water to knead a stiff dough.",
+    "Make small balls and roll them on a gavvalu board or fork to make shell shapes.",
+    "Deep-fry the gavvalu in medium hot oil until golden brown. Drain excess oil.",
+    "Prepare sugar syrup with 1/2 cup sugar and 1/4 cup water to one-string consistency.",
+    "Toss the fried gavvalu in syrup, mix well, and let them cool.",
+    "Store in an airtight container."
+  ]
+}
+,{
+  "id": "kajjikaya063",
+  "name": "Kajjikaya",
+  "image": "/images/kajjikaya.jpg",
+  "difficulty": "moderate",
+  "isVeg": true,
+  "type": "sweet",
+  "isInstant": false,
+  "isSpicy": false,
+  "ingredients": [
+    "1 cup all-purpose flour (maida)",
+    "2 tbsp ghee",
+    "Water to knead",
+    "Oil for deep frying",
+    "1/2 cup grated dry coconut",
+    "1/2 cup powdered sugar",
+    "1/4 cup roasted semolina",
+    "1/2 tsp cardamom powder",
+    "Chopped dry fruits (optional)"
+  ],
+  "stateId": "andhra-pradesh",
+  "procedure": [
+    "Mix flour with ghee and water to form a soft dough. Rest for 30 minutes.",
+    "In a bowl, mix grated coconut, powdered sugar, roasted semolina, cardamom, and nuts.",
+    "Roll small dough balls into thin circles. Place filling in the center.",
+    "Fold and seal the edges using a kajjikaya cutter or fork.",
+    "Deep fry in hot oil until golden brown. Drain excess oil.",
+    "Cool and store in an airtight container."
+  ]
+}
+,
   {
     "id": "gongura002",
     "name": "Gongura Pachadi",
@@ -846,7 +994,7 @@
   {
     "id": "SarvaPindi",
     "name": "Sarva Pindi",
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2FydmElMjBwaW5kaXxlbnwwfHwwfDB8MA%3D%3D",
+    "image": "/images/sarvapindi.jpg",
     "difficulty": "moderate",
     "isVeg": true,
     "type": "snack",
@@ -914,9 +1062,88 @@
     ]
   },
   {
+    "id": "littichokha067",
+    "name": "Litti Chokha",
+    "image": "/images/litti.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "lunch",
+    "isInstant": false,
+    "isSpicy": true,
+    "ingredients": [
+      "For Litti:",
+      "2 cups wheat flour",
+      "1/2 tsp carom seeds",
+      "2 tbsp ghee",
+      "Water to knead",
+      "Salt to taste",
+      "For Filling (Sattu Mixture):",
+      "1 cup roasted gram flour (sattu)",
+      "2 green chilies, finely chopped",
+      "1 inch ginger, grated",
+      "1 tsp ajwain (carom seeds)",
+      "1 tbsp mustard oil",
+      "2 tbsp chopped coriander leaves",
+      "Salt to taste",
+      "Lemon juice to taste",
+      "For Chokha:",
+      "2 eggplants (baingan)",
+      "2 potatoes",
+      "2 tomatoes",
+      "2 green chilies, chopped",
+      "1 onion, chopped",
+      "1 tbsp mustard oil",
+      "Salt to taste",
+      "Chopped coriander leaves"
+    ],
+    "stateId": "bihar",
+    "procedure": [
+      "Mix wheat flour, carom seeds, salt, and ghee. Add water and knead into a soft dough. Cover and rest for 20 minutes.",
+      "In a bowl, mix all filling ingredients. Add a few drops of water or lemon juice to moisten if needed.",
+      "Divide dough into balls. Flatten each, place some filling inside, and seal tightly.",
+      "Bake or roast the littis over coal or in an oven until golden brown, brushing with ghee.",
+      "For Chokha: Roast eggplant, tomatoes, and boil potatoes. Peel and mash them together.",
+      "Add mustard oil, green chilies, onions, salt, and coriander leaves. Mix well.",
+      "Serve hot littis with chokha and extra ghee."
+    ]
+  },
+  {
+    "id": "malpua068",
+    "name": "Malpua",
+    "image": "/images/malpua.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "sweet",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": [
+      "1 cup all-purpose flour (maida)",
+      "1/4 cup semolina (sooji)",
+      "1/2 cup milk or water",
+      "1/2 cup mashed ripe banana or khoya (optional)",
+      "1/2 tsp fennel seeds",
+      "Ghee or oil for shallow frying",
+      "For Sugar Syrup:",
+      "1 cup sugar",
+      "1/2 cup water",
+      "1/2 tsp cardamom powder",
+      "Saffron strands (optional)"
+    ],
+    "stateId": "bihar",
+    "procedure": [
+      "In a bowl, mix flour, semolina, mashed banana/khoya, fennel seeds, and milk to form a thick batter. Let it rest for 30 minutes.",
+      "Make sugar syrup by boiling sugar and water to one-string consistency. Add cardamom and saffron. Keep warm.",
+      "Heat ghee or oil in a pan. Pour a ladle of batter to form a small pancake.",
+      "Cook on medium heat until golden brown on both sides.",
+      "Remove and dip in warm sugar syrup for a few seconds.",
+      "Serve hot or at room temperature, optionally garnished with dry fruits."
+    ]
+  }
+,
+  {
     "id": "QubaniKaMeetha",
     "name": "Qubani Ka Meetha",
-    "image": "https://images.unsplash.com/photo-1617196038433-5b8b3c5e6c4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cXVibWFuaSUyMGthJTIwbWVldGhhfGVufDB8fDB8fHww",
+    "image": "/images/qubani.jpg",
     "difficulty": "easy",
     "isVeg": true,
     "type": "sweet",
@@ -977,55 +1204,11 @@
       "Garnish with fresh coriander and serve hot with rice or roti."
     ]
   },
-  {
-    "id": "Baigan",
-    "name": "Bagara Baingan",
-    "image": "https://images.unsplash.com/photo-1620082872376-efba90453a55?w=500&auto=format&fit=crop&q=60",
-    "difficulty": "moderate",
-    "isVeg": true,
-    "type": "dinner",
-    "isInstant": false,
-    "isSpicy": true,
-    "ingredients": [
-      "6-8 small eggplants (baingan), slit crosswise from the bottom, keeping the stem intact",
-      "For the paste:",
-      "1/4 cup roasted peanuts",
-      "2 tbsp sesame seeds",
-      "1 tbsp desiccated coconut",
-      "1 tbsp coriander seeds",
-      "1 tsp cumin seeds",
-      "4-5 dry red chilies",
-      "1 large onion, roughly chopped",
-      "1 tbsp ginger-garlic paste",
-      "1 small piece of tamarind, soaked in water",
-      "For the gravy:",
-      "2 tbsp oil",
-      "1 tsp mustard seeds",
-      "1/2 tsp fenugreek seeds",
-      "Few curry leaves",
-      "A pinch of asafoetida (hing)",
-      "1/2 tsp turmeric powder",
-      "Water as needed",
-      "Salt to taste",
-      "Fresh coriander for garnish"
-    ],
-    "stateId": "telangana",
-    "procedure": [
-      "For the paste: Dry roast peanuts, sesame seeds, desiccated coconut, coriander seeds, cumin seeds, and dry red chilies until fragrant. Let them cool.",
-      "Grind the roasted ingredients with chopped onion, ginger-garlic paste, and soaked tamarind (with a little water) to a smooth paste.",
-      "Stuff the slit eggplants with some of the prepared paste.",
-      "Heat oil in a heavy-bottomed pan or kadai.",
-      "Add mustard seeds, fenugreek seeds, curry leaves, and asafoetida. Let them splutter.",
-      "Add the stuffed eggplants and sauté gently for 5-7 minutes until they are lightly browned.",
-      "Add the remaining paste and turmeric powder to the pan. Mix well and cook for 5 minutes.",
-      "Add 1-1.5 cups of water and salt to taste. Bring to a boil, then reduce heat, cover, and simmer until the eggplants are tender and the gravy thickens (about 15-20 minutes).",
-      "Garnish with fresh coriander and serve hot with rice or roti."
-    ]
-  },
+  
   {
     "id": "DoubleKaMeetha",
     "name": "Double Ka Meetha",
-    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&auto=format&fit=crop&q=60",
+    "image": "/images/double.jpg",
     "difficulty": "easy",
     "isVeg": true,
     "type": "sweet",
@@ -1056,7 +1239,36 @@
       "Garnish generously with chopped dry fruits.",
       "Serve warm or chilled."
     ]
-  },
+  },{
+  "id": "poornalu076",
+  "name": "Poornalu",
+  "image": "/images/poornalu.jpg",
+  "difficulty": "moderate",
+  "isVeg": true,
+  "type": "sweet",
+  "isInstant": false,
+  "isSpicy": false,
+  "ingredients": [
+    "1 cup urad dal",
+    "2 cups rice",
+    "1 cup chana dal",
+    "1 cup grated jaggery",
+    "1/2 tsp cardamom powder",
+    "1/4 cup grated coconut (optional)",
+    "Oil or ghee for deep frying"
+  ],
+  "stateId": "telangana",
+  "procedure": [
+    "Soak urad dal and rice for 4–6 hours. Grind into a thick smooth batter, like dosa batter. Let it ferment for a few hours.",
+    "Soak chana dal separately for 1–2 hours. Cook until soft but not mushy. Drain and mash.",
+    "Mix mashed chana dal with jaggery, cardamom powder, and coconut. Cook on low heat until thickened.",
+    "Make small round balls from this mixture.",
+    "Dip each ball in the urad-rice batter to coat evenly.",
+    "Deep fry in hot oil or ghee until golden brown and crisp.",
+    "Serve warm or at room temperature during festivals or special occasions."
+  ]
+}
+,
   {
     "id": "mui057",
     "name": "Mui Borok",
@@ -1128,31 +1340,71 @@
     ]
   },
   {
-    "id": "peda022",
-    "name": "Mathura Peda",
-    "image": "/images/peda.jpg",
-    "difficulty": "easy",
-    "isVeg": true,
-    "type": "sweet",
-    "isInstant": true,
-    "isSpicy": false,
-    "ingredients": [
-      "1 cup khoya (mawa), grated or crumbled",
-      "1/2 cup powdered sugar (adjust to taste)",
-      "1/4 tsp cardamom powder",
-      "1 tbsp ghee (optional, for richness)",
-      "A few saffron strands (optional, for color and flavor)"
-    ],
-    "stateId": "uttar-pradesh",
-    "procedure": [
-      "In a heavy-bottomed pan, add grated khoya. Cook on low heat, stirring continuously, until it turns light golden brown and releases a nutty aroma (about 8-10 minutes). Be careful not to burn it.",
-      "Remove from heat and let it cool slightly. It should still be warm but not hot.",
-      "Add powdered sugar, cardamom powder, and saffron strands (if using) to the warm khoya. Mix well until everything is thoroughly combined and forms a dough-like consistency.",
-      "If the mixture is too dry, add a little melted ghee and mix again.",
-      "Take small portions of the mixture and shape them into round or oval pedas. You can press a thumb impression in the center or decorate with a pistachio.",
-      "Serve immediately or store in an airtight container at room temperature for a few days or in the refrigerator for longer."
-    ]
-  },
+  "id": "adhirasam056",
+  "name": "Adhirasam",
+  "image": "/images/adhirasam.jpg",
+  "difficulty": "moderate",
+  "isVeg": true,
+  "type": "sweet",
+  "isInstant": false,
+  "isSpicy": false,
+  "ingredients": [
+    "1 cup raw rice",
+    "3/4 cup jaggery (grated or powdered)",
+    "1/4 tsp cardamom powder",
+    "1 tsp sesame seeds (optional)",
+    "Oil for deep frying"
+  ],
+  "stateId": "tamil-nadu",
+  "procedure": [
+    "Soak raw rice in water for 2 hours. Drain and spread it on a clean cloth to dry slightly (still slightly moist). Grind into a fine powder.",
+    "Heat jaggery with 1/4 cup water in a pan. When it dissolves and reaches soft ball consistency (drop in water and it forms a soft ball), turn off the heat.",
+    "Add cardamom powder and sesame seeds (if using).",
+    "Gradually add the rice flour into the jaggery syrup while mixing with a spoon. It will become a soft dough-like mixture. Let it rest for 1 day.",
+    "Next day, knead the dough slightly. Take small balls, flatten into discs.",
+    "Heat oil in a deep pan. Deep-fry the discs on low heat until golden brown.",
+    "Remove and drain excess oil on paper towels. Cool and store in an airtight container."
+  ]
+},{
+  "id": "aloogobi057",
+  "name": "Aloo Gobi",
+  "image": "/images/aloogobi.jpg",
+  "difficulty": "easy",
+  "isVeg": true,
+  "type": "dinner",
+  "isInstant": false,
+  "isSpicy": true,
+  "ingredients": [
+    "2 cups cauliflower florets",
+    "2 medium potatoes, peeled and cubed",
+    "1 onion, finely chopped",
+    "2 tomatoes, chopped",
+    "1 tsp ginger-garlic paste",
+    "1/2 tsp turmeric powder",
+    "1 tsp cumin seeds",
+    "1 tsp coriander powder",
+    "1/2 tsp garam masala",
+    "1/2 tsp red chili powder",
+    "2 tbsp oil",
+    "Salt to taste",
+    "Fresh coriander leaves for garnish"
+  ],
+  "stateId": "punjab",
+  "procedure": [
+    "Heat oil in a pan. Add cumin seeds and let them splutter.",
+    "Add chopped onions and sauté until golden brown.",
+    "Add ginger-garlic paste and cook for a minute.",
+    "Add tomatoes and cook until soft and oil starts to separate.",
+    "Add turmeric, red chili powder, coriander powder, and salt. Mix well.",
+    "Add cubed potatoes and cook for 5 minutes.",
+    "Add cauliflower florets, mix everything, and cover the pan.",
+    "Cook on low heat for 15–20 minutes, stirring occasionally, until vegetables are tender.",
+    "Sprinkle garam masala and garnish with chopped coriander leaves.",
+    "Serve hot with roti, naan, or rice."
+  ]
+}
+,
+
   {
     "id": "idli007",
     "name": "Idli",
@@ -1221,6 +1473,7 @@
       "Garnish with fresh coriander and serve hot with idli, dosa, or rice."
     ]
   },
+  
   {
     "id": "poha025",
     "name": "Poha",
@@ -1260,7 +1513,7 @@
   {
     "id": "bhutte026",
     "name": "Bhutte Ka Kees",
-    "image": "/images/bhutte.jpg",
+    "image": "/images/BhutteKaKees.jpeg",
     "difficulty": "moderate",
     "isVeg": true,
     "type": "snack",
@@ -1518,7 +1771,7 @@
   {
     "id": "Thekuabihar",
     "name": "Thekua",
-    "image": "/images/thekua.jpg",
+    "image": "/images/thekua.jpeg",
     "difficulty": "easy",
     "isVeg": true,
     "type": "snack",
@@ -2030,7 +2283,7 @@
   {
     "id": "besan030",
     "name": "Besan Masala Roti",
-    "image": "/images/besanroti.jpg",
+    "image": "/images/masalaroti.jpg",
     "difficulty": "easy",
     "isVeg": true,
     "type": "breakfast",
@@ -2127,10 +2380,68 @@
       "Store in an airtight container."
     ]
   },
+  
+  {
+    "id": "boondi074",
+    "name": "Boondi",
+    "image": "/images/boondi.jpg",
+    "difficulty": "easy",
+    "isVeg": true,
+    "type": "snack",
+    "isInstant": true,
+    "isSpicy": false,
+    "ingredients": [
+      "1 cup besan (gram flour)",
+      "1/4 tsp turmeric powder (optional for color)",
+      "1/4 tsp baking soda (optional)",
+      "Water as needed to make batter",
+      "Oil for deep frying",
+      "Salt to taste",
+      "For sweet version: 1/2 cup sugar + 1/4 cup water + cardamom"
+    ],
+    "stateId": "telangana",
+    "procedure": [
+      "Mix besan, turmeric, baking soda, and salt with water to form a smooth, pouring consistency batter.",
+      "Heat oil in a pan. Hold a perforated ladle above the oil and pour a spoonful of batter over it to form small round droplets.",
+      "Fry boondi until golden. Remove and drain on paper.",
+      "For sweet boondi: Prepare sugar syrup with one-string consistency, flavor with cardamom, and toss boondi in it.",
+      "Cool and serve or store in an airtight container."
+    ]
+  },
+  {
+    "id": "gavvalu075",
+    "name": "Gavvalu",
+    "image": "/images/gavalu.jpg",
+    "difficulty": "moderate",
+    "isVeg": true,
+    "type": "sweet",
+    "isInstant": false,
+    "isSpicy": false,
+    "ingredients": [
+      "1 cup all-purpose flour (maida)",
+      "1/4 cup semolina (optional)",
+      "2 tbsp ghee",
+      "Water to knead",
+      "Oil for deep frying",
+      "1/2 cup sugar",
+      "1/4 cup water",
+      "1/2 tsp cardamom powder"
+    ],
+    "stateId": "telangana",
+    "procedure": [
+      "Mix flour, semolina, and ghee. Add water to form a stiff dough.",
+      "Make small balls and roll each on a gavvalu mold or fork to create shell shapes.",
+      "Deep fry in medium hot oil until golden and crisp. Remove and drain excess oil.",
+      "Prepare sugar syrup of one-string consistency with sugar, water, and cardamom.",
+      "Toss the fried gavvalu in the syrup and mix until coated.",
+      "Cool and store in an airtight container."
+    ]
+  }
+,
   {
     "id": "roganjosh049",
     "name": "Rogan Josh",
-    "image": "/images/roganjosh.jpg",
+    "image": "/images/rogan.jpg",
     "difficulty": "hard",
     "isVeg": false,
     "type": "dinner",
@@ -2316,7 +2627,7 @@
   {
     "id": "faraa036",
     "name": "Faraa",
-    "image": "/images/faraa.jpg",
+    "image": "/images/faraa.jpeg",
     "difficulty": "moderate",
     "isVeg": true,
     "type": "snack",
